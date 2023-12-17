@@ -12,6 +12,9 @@ class Elf(ABC):
     def play_song(self):
         print(f"Elf {self.name} playing {self.favorite_song} "
               f"on {self.mus_instrument}")
+    @abstractmethod
+    def song_battle(self):
+        pass
 
     @abstractmethod
     def fight(self):
